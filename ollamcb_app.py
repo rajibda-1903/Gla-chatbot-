@@ -1,6 +1,4 @@
 import streamlit as st
-import openai
-from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.llms import Ollama
@@ -31,7 +29,7 @@ def generate_response(question,llm,temperature,max_tokens):
     return answer
 
 ## #Title of the app
-st.title("GLA Univ. Enhanced Q&A Chatbot With OpenAI")
+st.title("GLA Univ. Enhanced Q&A Chatbot With Ollama-Gemma 2b")
 
 
 ## Select the OpenAI model
